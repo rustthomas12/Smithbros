@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get a free construction quote from Smith Brothers Construction. Use our smart calculator for instant rough estimates on your project.">
+    <meta name="keywords" content="construction quote, free estimate, building cost calculator, renovation quote">
+    <title>Get A Quote - Smith Brothers Construction</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="canonical" href="https://smithbrothersconstruction.com/quote.html">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>SMITH BROTHERS</h2>
+                <p class="tagline">Construction</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/team.html">Meet The Team</a></li>
+                <li><a href="/quote.html" class="btn-nav active">Get A Quote</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="header-overlay"></div>
+        <div class="container">
+            <h1 class="fade-in">Get Your Free Quote</h1>
+            <p class="fade-in">Answer a few questions to receive a rough estimate instantly</p>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-container">
+                <div class="quote-intro slide-up">
+                    <h2>Tell Us About Your Project</h2>
+                    <p>Fill out the form below and we'll provide you with a rough estimate. One of our team members will contact you within 24 hours to discuss your project in detail.</p>
+                </div>
+
+                <form id="quoteForm" class="quote-form slide-up">
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3>Your Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="zipCode">Zip Code *</label>
+                                <input type="text" id="zipCode" name="zipCode" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Details -->
+                    <div class="form-section">
+                        <h3>Project Details</h3>
+                        
+                        <div class="form-group">
+                            <label for="projectType">Project Type *</label>
+                            <select id="projectType" name="projectType" required>
+                                <option value="">Select a project type</option>
+                                <option value="new-construction" data-rate="150">New Construction</option>
+                                <option value="renovation" data-rate="100">Full Renovation</option>
+                                <option value="addition" data-rate="120">Home Addition</option>
+                                <option value="kitchen-remodel" data-rate="85">Kitchen Remodel</option>
+                                <option value="bathroom-remodel" data-rate="75">Bathroom Remodel</option>
+                                <option value="basement-finish" data-rate="65">Basement Finishing</option>
+                                <option value="commercial" data-rate="130">Commercial Build-Out</option>
+                                <option value="roofing" data-rate="45">Roofing</option>
+                                <option value="siding" data-rate="40">Siding</option>
+                                <option value="deck-patio" data-rate="55">Deck/Patio</option>
+                                <option value="other" data-rate="80">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="projectSize">Estimated Project Size *</label>
+                            <select id="projectSize" name="projectSize" required>
+                                <option value="">Select project size</option>
+                                <option value="small" data-multiplier="1">Small (Under 500 sq ft)</option>
+                                <option value="medium" data-multiplier="1.5">Medium (500-1500 sq ft)</option>
+                                <option value="large" data-multiplier="2.5">Large (1500-3000 sq ft)</option>
+                                <option value="xlarge" data-multiplier="4">Extra Large (3000+ sq ft)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="squareFootage">Approximate Square Footage (if known)</label>
+                            <input type="number" id="squareFootage" name="squareFootage" min="0" placeholder="Enter square footage">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timeline">Desired Timeline *</label>
+                            <select id="timeline" name="timeline" required>
+                                <option value="">Select timeline</option>
+                                <option value="asap">As Soon As Possible</option>
+                                <option value="1-3months">1-3 Months</option>
+                                <option value="3-6months">3-6 Months</option>
+                                <option value="6-12months">6-12 Months</option>
+                                <option value="12months+">12+ Months</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Budget Range *</label>
+                            <select id="budget" name="budget" required>
+                                <option value="">Select budget range</option>
+                                <option value="under-25k">Under $25,000</option>
+                                <option value="25k-50k">$25,000 - $50,000</option>
+                                <option value="50k-100k">$50,000 - $100,000</option>
+                                <option value="100k-250k">$100,000 - $250,000</option>
+                                <option value="250k-500k">$250,000 - $500,000</option>
+                                <option value="500k+">$500,000+</option>
+                                <option value="not-sure">Not Sure Yet</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Project Description *</label>
+                            <textarea id="description" name="description" rows="5" required placeholder="Please describe your project in detail..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="permits" id="permits">
+                                <span>I need help with permits and planning</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="design" id="design">
+                                <span>I need design assistance</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="financing" id="financing">
+                                <span>I'm interested in financing options</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Estimate Display -->
+                    <div id="estimateDisplay" class="estimate-display" style="display: none;">
+                        <div class="estimate-content">
+                            <h3>Rough Estimate</h3>
+                            <div class="estimate-amount" id="estimateAmount">$0</div>
+                            <p class="estimate-note">This is a rough estimate based on your selections. Final pricing will be determined after a detailed consultation.</p>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large" id="submitBtn">
+                            <span class="btn-text">Submit Request</span>
+                            <span class="btn-loading" style="display: none;">Sending...</span>
+                        </button>
+                    </div>
+
+                    <!-- Success Message -->
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3>Thank You!</h3>
+                        <p>Your quote request has been received. We'll contact you within 24 hours to discuss your project.</p>
+                    </div>
+
+                    <!-- Error Message -->
+                    <div id="errorMessage" class="error-message" style="display: none;">
+                        <div class="error-icon">✕</div>
+                        <h3>Oops!</h3>
+                        <p id="errorText">Something went wrong. Please try again or call us at (555) 123-4567.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Quote With Us Section -->
+    <section class="why-quote">
+        <div class="container">
+            <h2 class="section-title slide-up">Why Get A Quote From Us?</h2>
+            <div class="why-grid">
+                <div class="why-item slide-up">
+                    <div class="why-icon">⚡</div>
+                    <h3>Fast Response</h3>
+                    <p>We respond to all quote requests within 24 hours, often sooner.</p>
+                </div>
+                <div class="why-item slide-up">
+                    <div class="why-icon">💰</div>
+                    <h3>Transparent Pricing</h3>
+                    <p>No hidden fees or surprises. You'll know exactly what you're paying for.</p>
+                </div>
+                <div class="why-item slide-up">
+                    <div class="why-icon">🎯</div>
+                    <h3>Accurate Estimates</h3>
+                    <p>Our decades of experience mean our estimates are reliable and realistic.</p>
+                </div>
+                <div class="why-item slide-up">
+                    <div class="why-icon">🤝</div>
+                    <h3>No Obligation</h3>
+                    <p>Getting a quote is completely free with no obligation to proceed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Smith Brothers Construction</h3>
+                    <p>Building excellence since day one. Family-owned, quality-focused.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/team.html">Meet The Team</a></li>
+                        <li><a href="/quote.html">Get A Quote</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@smithbrothersconstruction.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Smith Brothers Construction. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/quote.js"></script>
+</body>
+</html>

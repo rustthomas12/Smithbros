@@ -102,6 +102,13 @@ p {
     display: flex;
     align-items: center;
     gap: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+    opacity: 0.8;
 }
 
 .logo-image {
@@ -200,7 +207,7 @@ p {
         linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(139, 69, 19, 0.4)),
         url('/images/hero-background.jpg');
     background-size: cover;
-    background-position: center 20%;
+    background-position: center 30%;
     background-attachment: fixed;
     display: flex;
     align-items: center;

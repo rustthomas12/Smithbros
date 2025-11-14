@@ -207,7 +207,7 @@ p {
         linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(139, 69, 19, 0.4)),
         url('/images/hero-background.jpg');
     background-size: cover;
-    background-position: center 30%;
+    background-position: center 10%;
     background-attachment: fixed;
     display: flex;
     align-items: center;

@@ -22,18 +22,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         const baseRate = parseFloat(typeOption.getAttribute('data-rate')) || 0;
-        const multiplier = parseFloat(sizeOption.getAttribute('data-multiplier')) || 1;
-        
+
         let sqft = parseInt(squareFootage.value);
-        
+
+        // Use default square footage based on project size if not specified
         if (!sqft || sqft <= 0) {
             if (sizeOption.value === 'small') sqft = 300;
-            else if (sizeOption.value === 'medium') sqft = 1000;
-            else if (sizeOption.value === 'large') sqft = 2000;
-            else if (sizeOption.value === 'xlarge') sqft = 4000;
+            else if (sizeOption.value === 'medium') sqft = 750;
+            else if (sizeOption.value === 'large') sqft = 1500;
+            else if (sizeOption.value === 'xlarge') sqft = 3000;
         }
 
-        const estimate = baseRate * sqft * multiplier;
+        // Calculate estimate: baseRate ($/sq ft) × square footage
+        const estimate = baseRate * sqft;
         
         const formatter = new Intl.NumberFormat('en-US', {
             style: 'currency',

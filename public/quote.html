@@ -102,17 +102,17 @@
                             <label for="projectType">Project Type *</label>
                             <select id="projectType" name="projectType" required>
                                 <option value="">Select a project type</option>
-                                <option value="new-construction" data-rate="150">New Construction</option>
-                                <option value="renovation" data-rate="100">Full Renovation</option>
-                                <option value="addition" data-rate="120">Home Addition</option>
-                                <option value="kitchen-remodel" data-rate="85">Kitchen Remodel</option>
-                                <option value="bathroom-remodel" data-rate="75">Bathroom Remodel</option>
-                                <option value="basement-finish" data-rate="65">Basement Finishing</option>
-                                <option value="commercial" data-rate="130">Commercial Build-Out</option>
-                                <option value="roofing" data-rate="45">Roofing</option>
-                                <option value="siding" data-rate="40">Siding</option>
-                                <option value="deck-patio" data-rate="55">Deck/Patio</option>
-                                <option value="other" data-rate="80">Other</option>
+                                <option value="new-construction" data-rate="200">New Construction</option>
+                                <option value="renovation" data-rate="150">Full Renovation</option>
+                                <option value="addition" data-rate="175">Home Addition</option>
+                                <option value="kitchen-remodel" data-rate="160">Kitchen Remodel</option>
+                                <option value="bathroom-remodel" data-rate="140">Bathroom Remodel</option>
+                                <option value="basement-finish" data-rate="90">Basement Finishing</option>
+                                <option value="commercial" data-rate="200">Commercial Build-Out</option>
+                                <option value="roofing" data-rate="50">Roofing</option>
+                                <option value="siding" data-rate="45">Siding</option>
+                                <option value="deck-patio" data-rate="75">Deck/Patio</option>
+                                <option value="other" data-rate="120">Other</option>
                             </select>
                         </div>
 
@@ -183,9 +183,9 @@
                     <!-- Estimate Display -->
                     <div id="estimateDisplay" class="estimate-display" style="display: none;">
                         <div class="estimate-content">
-                            <h3>Rough Estimate</h3>
+                            <h3>Rough Estimate*</h3>
                             <div class="estimate-amount" id="estimateAmount">$0</div>
-                            <p class="estimate-note">This is a rough estimate based on your selections. Final pricing will be determined after a detailed consultation.</p>
+                            <p class="estimate-note">*This is a rough estimate based on regional construction costs in the Springfield, MA area. This estimate is not binding and final pricing will be determined after a detailed consultation.</p>
                         </div>
                     </div>
 
@@ -215,30 +215,39 @@
         </div>
     </section>
 
-    <!-- Why Quote With Us Section -->
-    <section class="why-quote">
+    <!-- Estimate Methodology Section -->
+    <section class="estimate-methodology">
         <div class="container">
-            <h2 class="section-title slide-up">Why Get A Quote From Us?</h2>
-            <div class="why-grid">
-                <div class="why-item slide-up">
-                    <div class="why-icon">⚡</div>
-                    <h3>Fast Response</h3>
-                    <p>We respond to all quote requests within 24 hours, often sooner.</p>
+            <div class="methodology-content">
+                <h3>About Our Estimates</h3>
+                <p class="methodology-text">Our rough estimates are calculated using average construction costs for the Springfield, Massachusetts area based on industry data from multiple sources including HomeBlue, Norman Builders, Manta, and regional construction cost studies for Western Massachusetts (2024-2025).*</p>
+
+                <div class="cost-ranges">
+                    <h4>Regional Cost Ranges (per square foot):</h4>
+                    <ul>
+                        <li><strong>New Construction:</strong> $150-$270/sq ft</li>
+                        <li><strong>Full Renovation:</strong> $120-$300/sq ft</li>
+                        <li><strong>Home Addition:</strong> $150-$250/sq ft</li>
+                        <li><strong>Kitchen Remodel:</strong> $120-$225/sq ft</li>
+                        <li><strong>Bathroom Remodel:</strong> $120-$160/sq ft</li>
+                        <li><strong>Basement Finishing:</strong> $60-$150/sq ft</li>
+                        <li><strong>Deck/Patio:</strong> $30-$120/sq ft</li>
+                    </ul>
                 </div>
-                <div class="why-item slide-up">
-                    <div class="why-icon">💰</div>
-                    <h3>Transparent Pricing</h3>
-                    <p>No hidden fees or surprises. You'll know exactly what you're paying for.</p>
-                </div>
-                <div class="why-item slide-up">
-                    <div class="why-icon">🎯</div>
-                    <h3>Accurate Estimates</h3>
-                    <p>Our decades of experience mean our estimates are reliable and realistic.</p>
-                </div>
-                <div class="why-item slide-up">
-                    <div class="why-icon">🤝</div>
-                    <h3>No Obligation</h3>
-                    <p>Getting a quote is completely free with no obligation to proceed.</p>
+
+                <div class="disclaimer">
+                    <p><strong>*IMPORTANT DISCLAIMER:</strong> The estimates provided by this calculator are rough approximations based on regional average costs and are for informational purposes only. These estimates are NOT binding quotes and do not constitute a contract or commitment from Smith Brothers Construction. Actual project costs may vary significantly based on:</p>
+                    <ul>
+                        <li>Specific site conditions and accessibility</li>
+                        <li>Material selections and quality grades</li>
+                        <li>Project complexity and custom requirements</li>
+                        <li>Current market conditions and material availability</li>
+                        <li>Permitting and regulatory requirements</li>
+                        <li>Timeline and scheduling considerations</li>
+                    </ul>
+                    <p>A detailed, binding quote will be provided after an in-person consultation and thorough project assessment. By submitting this form, you acknowledge that the rough estimate is not a guaranteed price and that final pricing will be determined through our formal quotation process.</p>
+
+                    <p class="sources"><strong>Sources:</strong> Cost data compiled from HomeBlue.com, NormanBuilders.com, Manta.com, 3D Home Improvements 2025 Home Renovation Cost Guide for Western Massachusetts, and regional construction cost databases (2024-2025).</p>
                 </div>
             </div>
         </div>
